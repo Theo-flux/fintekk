@@ -1,31 +1,30 @@
-
 * {
   margin: 0px;
   padding: 0px;
   box-sizing: border-box;
 }
 :root {
-  --primary: #A378FF;
-  --green: #00722D;
-  --black: #2D2D2D;
+  --primary: #2e5cff;
+  --green: #00722d;
+  --black: #171717;
   --white: #fff;
   --gray: #666666;
-  --gray_stroke: #E5E5E5;
+  --gray_stroke: #e5e5e5;
   --red: #ff3333;
-  --alabaster: #FAFAFA;
-  --silver: #BDBDBD;
-  --danger: #FFEAEA;
-  --silver: #ADADAD;
-  --gallery: #EBEBEB;
-  --danger_stroke: #D30000;
+  --alabaster: #fafafa;
+  --silver: #bdbdbd;
+  --danger: #ffeaea;
+  --silver: #adadad;
+  --gallery: #ebebeb;
+  --danger_stroke: #d30000;
   --active: #004804;
-  --inactive: #2D2D2D;
-  --deactivated: #FF0000;
-  --active-bg: #8BF290;
-  --inactive-bg: #2D2D2D10;
-  --deactivated-bg: #FFDADA;
-  --alabaster: #FCFCFC;
-  --error: #D62828;
+  --inactive: #2d2d2d;
+  --deactivated: #ff0000;
+  --active-bg: #8bf290;
+  --inactive-bg: #2d2d2d10;
+  --deactivated-bg: #ffdada;
+  --alabaster: #fcfcfc;
+  --error: #d62828;
 }
 html {
   font-size: 0.9375rem;
@@ -42,7 +41,7 @@ body {
   width: 5px;
   height: 5px;
 }
-::-webkit-scrollbar-track{
+::-webkit-scrollbar-track {
   background: var(--silver);
 }
 ::-webkit-scrollbar-thumb {

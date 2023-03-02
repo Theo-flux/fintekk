@@ -1,28 +1,17 @@
-import styled from 'styled-components';
-import fLogo from '../../assets/images/fintekk_logo.svg';
-import { device } from '../../utils';
+import React from 'react'
+import styled from 'styled-components'
+import fLogo from '../../assets/images/fintekk_logo.svg'
 
-const Container = styled.div`
-`;
-
-const ContainerWhite = styled.div`
-  width: 100%;
-  padding: 0 0.5rem;
-  @media ${device.xl} {
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-  }
-`;
+const Container = styled.div``
 
 const StyledImg = styled.img`
-    width: 150px;
-`;
+  width: 80px;
+`
 
 export function Logo() {
   return (
     <Container>
       <StyledImg src={fLogo} alt="mpaylogo" />
     </Container>
-  );
+  )
 }
