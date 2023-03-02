@@ -17,7 +17,7 @@ export const NavContainer = styled.div`
 
 export const NavItemContainer = styled.div<Props>`
   position: absolute;
-  z-index: -1;
+  z-index: 98;
   left: 0px;
   top: ${props => (props.openNav ? '60px' : '-50px')};
   transform-origin: left;

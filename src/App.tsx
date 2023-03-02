@@ -1,15 +1,13 @@
-import { Fragment, useState } from 'react'
-import { Logo } from './shared'
-import { Nav } from './components'
+import React from 'react';
+import { Brands, Nav } from './components';
 
 function App() {
-  const [count, setCount] = useState(0)
-
   return (
-    <Fragment>
-      <Nav/>
-    </Fragment>
-  )
+    <React.Fragment>
+      <Nav />
+      <Brands />
+    </React.Fragment>
+  );
 }
 
-export default App
+export default App;
