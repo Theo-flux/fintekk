@@ -18,7 +18,11 @@ function Nav() {
           <Logo />
           <NavItemContainer openNav={openNav}>
             {navItems.map((navItem, index) => {
-              return <NavItemPod key={index}>{navItem.item}</NavItemPod>;
+              return (
+                <NavItemPod onClick={() => setOpenNav(!openNav)} key={index}>
+                  {navItem.item}
+                </NavItemPod>
+              );
             })}
           </NavItemContainer>
           <ButtonWrapper>

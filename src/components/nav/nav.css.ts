@@ -9,7 +9,7 @@ type Props = {
 export const NavContainer = styled.div`
   position: relative;
   width: 100%;
-  padding: 1rem;
+  padding: 1rem 0rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
