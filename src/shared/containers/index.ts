@@ -6,11 +6,15 @@ type Props = {
 };
 
 export const SectionTag = styled.section<Props>`
-  margin: 1rem 0rem;
   background-color: ${props => (props.bgColor ? `${props.bgColor}` : `white`)};
 `;
 
-export const DivTag = styled.div``;
+export const DivTag = styled.div`
+  padding: 2rem 0rem;
+  width: 95%;
+  max-width: 1024px;
+  margin: 0 auto;
+`;
 
 export const NavWrapper = styled.div`
   background-color: white;
@@ -19,9 +23,13 @@ export const NavWrapper = styled.div`
 `;
 
 export const NavTag = styled.nav`
-  width: 100%;
+  width: 95%;
   max-width: 1024px;
   margin: 0 auto;
 `;
 
-export const FooterTag = styled.footer``;
+export const FooterTag = styled.footer`
+  width: 95%;
+  max-width: 1024px;
+  margin: 0 auto;
+`;

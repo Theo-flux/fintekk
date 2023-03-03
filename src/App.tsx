@@ -1,11 +1,13 @@
 import React from 'react';
-import { Brands, Nav } from './components';
+import { Brands, Footer, Nav, NewsLetter } from './components';
 
 function App() {
   return (
     <React.Fragment>
       <Nav />
       <Brands />
+      <NewsLetter />
+      <Footer />
     </React.Fragment>
   );
 }
