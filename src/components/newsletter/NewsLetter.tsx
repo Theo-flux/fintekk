@@ -20,9 +20,9 @@ function NewsLetter() {
 
             <Form>
               <FormInput placeholder="Enter your email address" />
-              <FormButton>sign up</FormButton>
+              <FormButton>sign up for free</FormButton>
             </Form>
-            <FormNewButton>sign up</FormNewButton>
+            <FormNewButton>sign up for free</FormNewButton>
           </NewsWrapper>
         </NewsletterContainer>
       </DivTag>

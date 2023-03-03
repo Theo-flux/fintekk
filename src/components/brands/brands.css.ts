@@ -23,10 +23,9 @@ export const BrandContainer = styled.div`
   position: relative;
   height: 80px;
   width: 100%;
-  max-width: 1024px;
-  margin: 0 auto;
+  /* max-width: 1440px;
+  margin: 0 auto; */
   overflow-x: hidden;
-  /* border: 1px solid magenta; */
 `;
 
 export const BrandElement = styled.div`

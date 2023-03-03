@@ -9,6 +9,7 @@ export const ButtonClass = styled.button`
   width: fit-content;
   font-weight: 500;
   border-radius: ${radius.md};
+  font-size: 1rem;
 `;
 
 export const Button = styled(ButtonClass)`
@@ -19,6 +20,16 @@ export const Button = styled(ButtonClass)`
   &:hover {
     background-color: #2e5cff30;
     color: var(--primary);
+  }
+`;
+
+export const BtnWhite = styled(Button)`
+  background-color: white;
+  color: var(--gray);
+
+  &:hover {
+    background-color: #fff;
+    color: var(--gray);
   }
 `;
 
@@ -33,5 +44,19 @@ export const OutlineButton = styled(ButtonClass)`
     outline: 1px solid transparent;
     background-color: #2e5cff30;
     color: var(--primary);
+  }
+`;
+
+export const BtnWithIcon = styled(OutlineButton)`
+  color: var(--black);
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  outline: 1px solid var(--black);
+  outline-offset: -1px;
+
+  &:hover {
+    outline: 1px solid transparent;
+    color: var(--black);
   }
 `;

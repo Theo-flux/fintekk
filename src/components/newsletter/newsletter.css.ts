@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import { StyledH1 } from '../../shared';
+import { StyledH1, BtnWhite } from '../../shared';
 import { radius, device } from '../../utils';
 
 export const NewsletterContainer = styled.div`
@@ -13,7 +13,7 @@ export const NewsWrapper = styled.div`
   flex-direction: column;
   justify-content: flex-start;
 
-  @media ${device.md} {
+  @media ${device.base} {
     padding: 3rem;
     justify-content: center;
     align-items: center;
@@ -54,32 +54,17 @@ export const FormInput = styled.input`
   }
 `;
 
-export const FormButton = styled.button`
-  cursor: pointer;
+export const FormButton = styled(BtnWhite)`
   display: none;
-  padding: 0.7rem 2rem;
-  border: none;
-  outline: none;
-  border-radius: ${radius.md};
-  background-color: white;
-  color: var(--black);
 
   @media ${device.base} {
     display: block;
   }
 `;
 
-export const FormNewButton = styled.button`
+export const FormNewButton = styled(BtnWhite)`
   cursor: pointer;
   margin-top: 1rem;
-  width: fit-content;
-  display: block;
-  padding: 0.75rem 2rem;
-  border: none;
-  outline: none;
-  border-radius: ${radius.md};
-  background-color: white;
-  color: var(--black);
 
   @media ${device.base} {
     display: none;

@@ -12,7 +12,7 @@ export const SectionTag = styled.section<Props>`
 export const DivTag = styled.div`
   padding: 2rem 0rem;
   width: 95%;
-  max-width: 1024px;
+  max-width: 1440px;
   margin: 0 auto;
 `;
 
@@ -24,12 +24,12 @@ export const NavWrapper = styled.div`
 
 export const NavTag = styled.nav`
   width: 95%;
-  max-width: 1024px;
+  max-width: 1440px;
   margin: 0 auto;
 `;
 
 export const FooterTag = styled.footer`
   width: 95%;
-  max-width: 1024px;
+  max-width: 1440px;
   margin: 0 auto;
 `;
