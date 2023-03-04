@@ -23,7 +23,7 @@ export const NavWrapper = styled.div`
 `;
 
 export const NavTag = styled.nav`
-  width: 95%;
+  width: 100%;
   max-width: 1440px;
   margin: 0 auto;
 `;

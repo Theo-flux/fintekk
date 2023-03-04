@@ -3,8 +3,9 @@ import { device } from '../../utils';
 
 export const StyledH1 = styled.h1`
   color: var(--black);
-  font-weight: 800;
+  font-weight: 700;
   font-size: 1.875rem;
+  line-height: 1.3;
   @media ${device.base} {
     font-size: 2.2rem;
   }
@@ -16,7 +17,7 @@ export const StyledH1 = styled.h1`
 
 export const StyledTitle = styled.h1`
   color: var(--black);
-  font-weight: 800;
+  font-weight: 700;
   font-size: 1.875rem;
   @media ${device.base} {
     font-size: 2.2rem;

@@ -3,6 +3,7 @@ import { StyledH1, BtnWhite } from '../../shared';
 import { radius, device } from '../../utils';
 
 export const NewsletterContainer = styled.div`
+  font-family: 'Source Sans Pro', sans-serif;
   background-color: var(--primary);
   border-radius: ${radius.md};
 `;
@@ -35,7 +36,8 @@ export const Form = styled.div`
   margin-top: 1rem;
   width: 100%;
   max-width: 500px;
-  border: 1px solid white;
+  outline: 1px solid white;
+  outline-offset: -1px;
   border-radius: ${radius.md};
   padding: 0.3rem;
   display: flex;

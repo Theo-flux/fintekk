@@ -23,8 +23,6 @@ export const BrandContainer = styled.div`
   position: relative;
   height: 80px;
   width: 100%;
-  /* max-width: 1440px;
-  margin: 0 auto; */
   overflow-x: hidden;
 `;
 
@@ -41,7 +39,7 @@ export const BrandElement = styled.div`
 
 export const BrandPrimary = styled(BrandElement)`
   animation: ${primary} 10s linear infinite;
-  margin-right: 15rem;
+  /* margin-right: 15rem; */
 `;
 
 export const BrandSecondary = styled(BrandElement)`
@@ -50,6 +48,6 @@ export const BrandSecondary = styled(BrandElement)`
 
 export const BrandImage = styled.img`
   @media screen and (max-width: 767px) {
-    transform: scale(0.6);
+    transform: scale(0.7);
   }
 `;

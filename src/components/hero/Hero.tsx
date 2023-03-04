@@ -1,5 +1,5 @@
 import React from 'react';
-import { SectionTag, DivTag, Button, BtnWithIcon } from '../../shared';
+import { SectionTag, DivTag, CTABtn, BtnWithIcon } from '../../shared';
 import {
   HeroContainer,
   HoreSection,
@@ -8,6 +8,8 @@ import {
   HeroTitle,
   HeroText,
   BtnWrapper,
+  GoogleIcon,
+  AppleIcon,
 } from './hero.css';
 import jumbotron from '../../assets/images/fintekk_landing.svg';
 
@@ -26,12 +28,18 @@ function Hero() {
             </HeroText>
 
             <BtnWrapper>
-              <Button>Sign up for free</Button>
+              <CTABtn>Sign up for free</CTABtn>
             </BtnWrapper>
 
             <BtnWrapper>
-              <BtnWithIcon>Get on iPhone</BtnWithIcon>
-              <BtnWithIcon>Get on android</BtnWithIcon>
+              <BtnWithIcon>
+                <GoogleIcon />
+                Get on android
+              </BtnWithIcon>
+              <BtnWithIcon>
+                <AppleIcon />
+                Get on iPhone
+              </BtnWithIcon>
             </BtnWrapper>
           </HoreSection>
           <HeroFig>
