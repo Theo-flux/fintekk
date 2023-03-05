@@ -21,8 +21,8 @@ export const NavItemContainer = styled.div<Props>`
   left: 0px;
   top: 0px;
   padding: 5rem 2rem;
-  transform: ${props => (props.openNav ? 'scale(1)' : 'scale(0)')};
-  transform-origin: right top;
+  transform: ${props => (props.openNav ? 'scaleX(1)' : 'scaleX(0)')};
+  transform-origin: right;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
