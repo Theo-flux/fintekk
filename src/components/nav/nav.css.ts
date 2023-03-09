@@ -1,5 +1,6 @@
 import styled from 'styled-components';
 import { BiMenu } from 'react-icons/bi';
+import { GrFormClose } from 'react-icons/gr';
 import { device, primaryshadow, noshadow, transition } from '../../utils';
 
 type Props = {
@@ -19,7 +20,7 @@ export const NavItemContainer = styled.div<Props>`
   position: absolute;
   z-index: 98;
   left: 0px;
-  top: 0px;
+  top: 50px;
   padding: 5rem 2rem;
   transform: ${props => (props.openNav ? 'scaleX(1)' : 'scaleX(0)')};
   transform-origin: right;
@@ -28,7 +29,7 @@ export const NavItemContainer = styled.div<Props>`
   justify-content: flex-start;
   align-items: flex-start;
   width: 100%;
-  height: 100vh;
+  height: fit-content;
   background-color: var(--primary);
   ${transition}
   ${primaryshadow}
@@ -91,6 +92,16 @@ export const ButtonWrapper = styled.div`
 `;
 
 export const StyledBiMenu = styled(BiMenu)`
+  cursor: pointer;
+  display: block;
+  font-size: 2rem;
+
+  @media ${device.md} {
+    display: none;
+  }
+`;
+
+export const StyledGrFormClose = styled(GrFormClose)`
   cursor: pointer;
   display: block;
   font-size: 2rem;

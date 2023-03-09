@@ -6,6 +6,7 @@ import {
   NavItemPod,
   ButtonWrapper,
   StyledBiMenu,
+  StyledGrFormClose,
 } from './nav.css';
 import { navItems } from './navItems';
 
@@ -29,7 +30,10 @@ function Nav() {
             <OutlineButton>Login</OutlineButton>
             <Button>Signup for free</Button>
           </ButtonWrapper>
-          <StyledBiMenu onClick={() => setOpenNav(!openNav)} />
+          {openNav || <StyledBiMenu onClick={() => setOpenNav(!openNav)} />}
+          {openNav && (
+            <StyledGrFormClose onClick={() => setOpenNav(!openNav)} />
+          )}
         </NavContainer>
       </NavTag>
     </NavWrapper>
