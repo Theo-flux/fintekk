@@ -1,5 +1,12 @@
 import React from 'react';
-import { Brands, Footer, Hero, Nav, NewsLetter } from './components';
+import {
+  Brands,
+  Footer,
+  Hero,
+  Nav,
+  NewsLetter,
+  Activeusers,
+} from './components';
 
 function App() {
   return (
@@ -7,6 +14,7 @@ function App() {
       <Nav />
       <Hero />
       <Brands />
+      <Activeusers />
       <NewsLetter />
       <Footer />
     </React.Fragment>

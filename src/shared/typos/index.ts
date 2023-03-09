@@ -3,7 +3,7 @@ import { device } from '../../utils';
 
 export const StyledH1 = styled.h1`
   color: var(--black);
-  font-weight: 700;
+  font-weight: 600;
   font-size: 1.875rem;
   line-height: 1.3;
   @media ${device.base} {
