@@ -1,4 +1,5 @@
 import styled, { keyframes } from 'styled-components';
+import { device } from '../../utils';
 
 const primary = keyframes`
  from {
@@ -10,7 +11,7 @@ const primary = keyframes`
 `;
 
 const secondary = keyframes`
-from{
+  from{
    left: 130%;
   }
   to {
@@ -43,7 +44,12 @@ export const BrandPrimary = styled(BrandElement)`
 `;
 
 export const BrandSecondary = styled(BrandElement)`
+  display: none;
   animation: ${secondary} 10s linear infinite;
+
+  @media ${device.md} {
+    display: flex;
+  }
 `;
 
 export const BrandImage = styled.img`
