@@ -11,7 +11,7 @@ export const SectionTag = styled.section<Props>`
 
 export const DivTag = styled.div`
   padding: 4rem 0rem;
-  width: 95%;
+  width: 90%;
   max-width: 1440px;
   margin: 0 auto;
 `;

@@ -6,6 +6,7 @@ import {
   Nav,
   NewsLetter,
   Activeusers,
+  Services,
 } from './components';
 
 function App() {
@@ -15,6 +16,7 @@ function App() {
       <Hero />
       <Brands />
       <Activeusers />
+      <Services />
       <NewsLetter />
       <Footer />
     </React.Fragment>

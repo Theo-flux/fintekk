@@ -69,7 +69,7 @@ export const StyledText = styled.p`
 
 export const StyledSmallText = styled.small`
   font-size: 0.875rem;
-  font-weight: 400;
+  font-weight: 300;
   color: ${props => (props.color ? `${props.color}` : `var(--gray)`)};
   & > span {
     color: var(--primary);
@@ -82,7 +82,7 @@ export const StyledSmallText = styled.small`
 
 export const StyledTinyText = styled.p`
   font-size: 0.875rem;
-  font-weight: 400;
+  font-weight: 600;
   color: var(--gray);
   /* border: 1px solid magenta; */
 `;
