@@ -42,9 +42,6 @@ export const StepImg = styled.img`
   @media ${device.lg} {
     width: 300px;
   }
-  @media ${device.xl} {
-    width: 350px;
-  }
 `;
 
 export const StepsWrapper = styled.div`
