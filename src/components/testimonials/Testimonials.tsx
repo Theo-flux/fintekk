@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { DivTag, SectionTag, StyledTinyText } from '../../shared';
 import {
   Testimonialcontainer,
@@ -20,9 +20,11 @@ import {
   NumberPod,
 } from './testimonial.css';
 import { testimonyArr } from './testimonies';
+import { useHash } from '../../hook';
 
 function Testimonials() {
   const [current, setCurrent] = useState(1);
+  const [hash, setHash] = useHash();
 
   function handleTestimonialByNumber(arg: number) {
     setCurrent(arg);
@@ -31,24 +33,24 @@ function Testimonials() {
   function handlePrevArrow() {
     if (current === 1) {
       setCurrent(testimonyArr.length);
-      history.replaceState('', '', `#${current}`);
+      setHash(`#${current}`);
     } else {
       setCurrent(prev => prev - 1);
-      history.replaceState('', '', `#${current}`);
+      setHash(`#${current}`);
     }
   }
 
   function handleNextArrow() {
     if (current === testimonyArr.length) {
       setCurrent(1);
-      history.replaceState('', '', `#${current}`);
+      setHash(`#${current}`);
     } else {
       setCurrent(prev => prev + 1);
-      history.replaceState('', '', `#${current}`);
+      setHash(`#${current}`);
     }
   }
 
-  console.log(window.location.hash);
+//   console.log(window.location.hash);
 
   return (
     <SectionTag bgColor="#FBFBFB">
