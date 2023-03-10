@@ -4,7 +4,7 @@ import { device, radius } from '../../utils';
 import { HiStar, HiOutlineStar } from 'react-icons/hi';
 import { BsArrowUp, BsArrowDown } from 'react-icons/bs';
 
-type NumProps = {
+type Props = {
   active: boolean;
 };
 
@@ -73,6 +73,7 @@ export const TestimonyCardWrapper = styled.div`
   gap: 2rem;
   width: 100%;
   border-radius: ${radius.md};
+  scroll-behavior: smooth;
   overflow: hidden;
 
   @media ${device.md} {
@@ -89,7 +90,7 @@ export const TestimonyCardWrapper = styled.div`
   }
 `;
 
-export const TestimonyCard = styled.div`
+export const TestimonyCard = styled.div<Props>`
   padding: 1.5rem;
   min-width: 100%;
   height: 100%;
@@ -166,7 +167,7 @@ export const StyledBsArrowDown = styled(BsArrowDown)`
   }
 `;
 
-export const NumberPod = styled.div<NumProps>`
+export const NumberPod = styled.a<Props>`
   cursor: pointer;
   margin-right: 1rem;
   background-color: ${props =>
@@ -178,6 +179,7 @@ export const NumberPod = styled.div<NumProps>`
   display: flex;
   justify-content: center;
   align-items: center;
+  text-decoration: none;
 
   @media ${device.lg} {
     margin-right: 0rem;
@@ -185,7 +187,7 @@ export const NumberPod = styled.div<NumProps>`
   }
 `;
 
-export const Number = styled.p<NumProps>`
+export const Number = styled.p<Props>`
   font-size: 1.1rem;
 
   color: ${props => (props.active ? 'white' : 'var(--deepblue)')};

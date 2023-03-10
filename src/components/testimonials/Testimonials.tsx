@@ -31,20 +31,24 @@ function Testimonials() {
   function handlePrevArrow() {
     if (current === 1) {
       setCurrent(testimonyArr.length);
+      history.replaceState('', '', `#${current}`);
     } else {
       setCurrent(prev => prev - 1);
+      history.replaceState('', '', `#${current}`);
     }
   }
 
   function handleNextArrow() {
     if (current === testimonyArr.length) {
       setCurrent(1);
+      history.replaceState('', '', `#${current}`);
     } else {
       setCurrent(prev => prev + 1);
+      history.replaceState('', '', `#${current}`);
     }
   }
 
-  console.log(current);
+  console.log(window.location.hash);
 
   return (
     <SectionTag bgColor="#FBFBFB">
@@ -58,9 +62,13 @@ function Testimonials() {
           <TestimonyWrapper>
             <TestimonyCardWrapper>
               {testimonyArr.map((testimonyEl, index) => {
-                const { testimony, name } = testimonyEl;
+                const { testimony, name, id } = testimonyEl;
                 return (
-                  <TestimonyCard key={index}>
+                  <TestimonyCard
+                    id={id}
+                    key={index}
+                    active={current === index + 1 ? true : false}
+                  >
                     <TestimonyText>{testimony}</TestimonyText>
                     <TestimonyInner>
                       <TestimonyName>{name}</TestimonyName>
@@ -82,6 +90,7 @@ function Testimonials() {
                 return (
                   <NumberPod
                     key={index}
+                    href={test.href}
                     active={current === index + 1 ? true : false}
                     onClick={() => handleTestimonialByNumber(index + 1)}
                   >
