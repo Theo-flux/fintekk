@@ -1,8 +1,7 @@
 export const testimonyArr = [
   {
     name: 'Peter Obi',
-    testimony:
-      'The federal goverment wanted to sabotage things for us during our campaign but Fintekk rescued us all through. For this reason I gave them a 5 star rating',
+    testimony: `The federal goverment wanted to sabotage things for us during our campaign but Fintekk rescued us all through. For this reason I gave them a 5 star rating. You can go and verify this.`,
 
     ratings: 5,
     id: '1',

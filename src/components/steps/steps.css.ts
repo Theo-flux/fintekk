@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import { StyledH1, StyledH4 } from '../../shared';
+import { StyledH1, StyledH4, StyledText } from '../../shared';
 import { device } from '../../utils';
 
 export const StepsContainer = styled.div`
@@ -111,16 +111,19 @@ export const StepColOther = styled(StepCol)`
 export const StepNo = styled(StyledH4)`
   color: var(--primary);
   margin-bottom: 2rem;
+  
 `;
 
 export const StepTitle = styled(StyledH4)`
   color: var(--deepblue);
   text-align: left;
   margin-bottom: 1.5rem;
+  font-weight: 600;
 `;
-export const StepText = styled(StyledH4)`
+export const StepText = styled(StyledText)`
   font-weight: 300;
   text-align: left;
+  font-size: 1.2rem;
 `;
 export const StepLine = styled.div`
   width: 1px;

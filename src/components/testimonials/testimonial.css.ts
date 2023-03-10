@@ -102,7 +102,9 @@ export const TestimonyCard = styled.div<Props>`
   background-color: #fff;
 `;
 
-export const TestimonyText = styled(StyledText)``;
+export const TestimonyText = styled(StyledText)`
+    font-size: 1.3rem;
+`;
 
 export const TestimonyInner = styled.div`
   margin-top: 2rem;
