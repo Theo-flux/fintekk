@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 import { DivTag, SectionTag, StyledTinyText } from '../../shared';
 import {
   Testimonialcontainer,
@@ -50,7 +50,7 @@ function Testimonials() {
     }
   }
 
-//   console.log(window.location.hash);
+  //   console.log(window.location.hash);
 
   return (
     <SectionTag bgColor="#FBFBFB">
