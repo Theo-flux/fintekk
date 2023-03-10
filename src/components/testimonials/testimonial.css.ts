@@ -4,6 +4,10 @@ import { device, radius } from '../../utils';
 import { HiStar, HiOutlineStar } from 'react-icons/hi';
 import { BsArrowUp, BsArrowDown } from 'react-icons/bs';
 
+type NumProps = {
+  active: boolean;
+};
+
 export const Testimonialcontainer = styled.div`
   display: flex;
   flex-direction: column;
@@ -69,7 +73,7 @@ export const TestimonyCardWrapper = styled.div`
   gap: 2rem;
   width: 100%;
   border-radius: ${radius.md};
-  overflow-x: scroll;
+  overflow: hidden;
 
   @media ${device.md} {
     width: 90%;
@@ -81,7 +85,6 @@ export const TestimonyCardWrapper = styled.div`
     align-items: center;
     height: 200px;
     max-height: max-content;
-    overflow-y: scroll;
     max-height: max-content;
   }
 `;
@@ -139,6 +142,7 @@ export const TestimonyNavigator = styled.div`
 `;
 
 export const StyledBsArrowUp = styled(BsArrowUp)`
+  cursor: pointer;
   font-size: 1.2rem;
   color: var(--deepblue);
   transform: rotate(-90deg);
@@ -152,6 +156,7 @@ export const StyledBsArrowUp = styled(BsArrowUp)`
 `;
 
 export const StyledBsArrowDown = styled(BsArrowDown)`
+  cursor: pointer;
   font-size: 1rem;
   color: var(--deepblue);
   transform: rotate(-90deg);
@@ -161,12 +166,27 @@ export const StyledBsArrowDown = styled(BsArrowDown)`
   }
 `;
 
-export const Number = styled.div`
-  font-size: 1.1rem;
+export const NumberPod = styled.div<NumProps>`
+  cursor: pointer;
   margin-right: 1rem;
+  background-color: ${props =>
+    props.active ? 'var(--deepblue)' : 'transparent'};
+  border-radius: 50px;
+  height: 30px;
+  width: 30px;
+  border-radius: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 
   @media ${device.lg} {
     margin-right: 0rem;
-    margin-bottom: 1rem;
+    margin-bottom: 0.5rem;
   }
+`;
+
+export const Number = styled.p<NumProps>`
+  font-size: 1.1rem;
+
+  color: ${props => (props.active ? 'white' : 'var(--deepblue)')};
 `;

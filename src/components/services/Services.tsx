@@ -22,8 +22,6 @@ import {
 import { ServiceArr } from './service';
 
 function Services() {
-  console.log(ServiceArr);
-
   return (
     <SectionTag bgColor="#FBFBFB">
       <DivTag>
