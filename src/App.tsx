@@ -7,6 +7,7 @@ import {
   NewsLetter,
   Activeusers,
   Services,
+  Steps,
 } from './components';
 
 function App() {
@@ -17,6 +18,7 @@ function App() {
       <Brands />
       <Activeusers />
       <Services />
+      <Steps />
       <NewsLetter />
       <Footer />
     </React.Fragment>
