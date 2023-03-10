@@ -63,7 +63,8 @@ export const StyledH5 = styled.h5`
 export const StyledH6 = styled.h6``;
 
 export const StyledText = styled.p`
-  font-weight: 500;
+  font-weight: 300;
+  font-size: 20px;
   color: ${props => (props.color ? `${props.color}` : `var(--gray)`)};
 `;
 

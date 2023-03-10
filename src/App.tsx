@@ -8,6 +8,7 @@ import {
   Activeusers,
   Services,
   Steps,
+  Testimonials,
 } from './components';
 
 function App() {
@@ -19,6 +20,7 @@ function App() {
       <Activeusers />
       <Services />
       <Steps />
+      <Testimonials/>
       <NewsLetter />
       <Footer />
     </React.Fragment>
